@@ -9,7 +9,24 @@
 .container 
     max-width: 1140px
     margin: 0 auto
-
+.contacts
+    display: flex
+    &__phone
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        margin-right: 20px
+        & span
+            color: #ffffff
+            font-size: 14px
+            font-weight: 300
+        & a
+            color: #ffffff
+            font-size: 16px
+            font-weight: 700
+    &__button
+        width: 160px
+        height: 45px
 .title
     color: #2e2e2e
     font-size: 26px
@@ -39,8 +56,17 @@
         color: #ec644b
         font-size: 16px
         font-weight: 700
-
-
+.iconRad
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 102px
+    height: 102px
+    border: 1px solid $main-color
+    border-radius: 100%
+    margin: 0 auto
+a:hover
+    color: $hover-color
 
 @import "blocks/buttons"
 @import "blocks/promo"
@@ -48,3 +74,9 @@
 @import "blocks/ourwork"
 @import "blocks/agent"
 @import "blocks/delivery"
+@import "forms/consultation"
+@import "blocks/workscheme"
+@import "blocks/comments"
+@import "blocks/questions"
+@import "blocks/map"
+@import "blocks/footer"

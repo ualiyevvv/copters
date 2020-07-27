@@ -1,16 +1,14 @@
-.agent
+.agent,.manager
     min-height: 342px
     padding: 58px 0 75px 0
     background: url('../../img/bg_agent.jpg') center center/cover no-repeat
-    &__img
+    & .container
         display: flex
+        flex-direction: column
         justify-content: center
         align-items: center
-        width: 102px
-        height: 102px
+    & .iconRad
         border: 1px solid #ffffff
-        border-radius: 100%
-        margin: 0 auto
     & .title
         margin-top: 16px
         color: #fff
@@ -18,5 +16,5 @@
     & .subtitle
         margin-top: 18px
         color: #fff
-    
-
+.manager
+    background: url('../../img/bg_managers.jpg') center center/cover no-repeat
